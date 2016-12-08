@@ -4,10 +4,11 @@ import java.util.Calendar;
 public class BuchungController 
 {
 	private BuchungDAO buchungDAO;
+	private FlugController flugcontroll;
 
 	public BuchungController(String pfad)
 	{
-		//buchungDAO = new SerializedBuchungDAO(pfad);
+		buchungDAO = new SerializedBuchungDAO(pfad);
 	}
 	
 	
@@ -25,8 +26,12 @@ public class BuchungController
 	public void addBuchung(int buchungsId, int flugId, String vorname, String nachname, Calendar gdatum,
 			String passnmr, String adresse, String email, String telnmr,int anzpassagier)
 	{
-		Flug flug = 
-		Buchung buchung = buchungDAO.getBuchungbyId(buchungsId);
+	 
+		//flugcontroll.flugSuche(flugid);
+		//buchungDAO.speichereBuchung()
+		Ticket ticket = new Ticket(int ticketnummer, Passagier passagier, Flug flug, Sitzplatz sitzplatz);
+		Buchung buchung = new Buchung(buchungsId, gdatum, email, String telnmr, Flug flug, Passagier passagier,
+	    		Ticket ticket)
 		
 		
 	}
