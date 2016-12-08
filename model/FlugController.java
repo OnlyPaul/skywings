@@ -57,8 +57,8 @@ public class FlugController  {
 	}
 	
 	//klassendiagramm ändern
-	public flugSuche(int flugid){
-		Flug.getFlugid(id).
+	public Flug flugSuche(int flugid){
+		Flug.getFlugid(id);
 	}
 //FLugliste	
 	
