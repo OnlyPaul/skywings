@@ -3,6 +3,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 
+//hallo
+
 public class Buchung implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
